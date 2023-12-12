@@ -1,6 +1,10 @@
 # Run expressvpn and deluge in a container
 
-FROM polkaned/expressvpn:latest
+# There are currently issues with the latest version of polkaned/expressvpn
+# Using the last knokwn good for the moment. This will be changed as soon as
+# a fix is out.
+#FROM polkaned/expressvpn:latest
+FROM polkaned/expressvpn:3.59.0.9-1.656c98d6
 LABEL maintainer="ephreal@superfake.email"
 
 ENV D_PASSWORD=""
